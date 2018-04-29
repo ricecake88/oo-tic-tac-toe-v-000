@@ -118,5 +118,16 @@ class TicTacToe
    end
   end
   
-  def display_board
+  def play
+    if !over?
+      turn
+    end
+    
+    if won?
+      puts "Congratulations #{winner}!"
+    else draw?
+      puts "Draw!"
+    end
+      
+  end
 end
