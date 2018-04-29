@@ -95,6 +95,6 @@ class TicTacToe
   end
   
   def full?
-    @board.all{|i| i == "X" || i == "O"}
+    return @board.all{|i| i == "X" || i == "O"}
   end
 end
