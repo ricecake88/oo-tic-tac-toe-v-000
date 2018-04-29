@@ -109,6 +109,9 @@ class TicTacToe
   def winner
    won?.all? do|position|
      if position == "X"
+       return "X"
+     else
+       return "O"
      end
    end
      
