@@ -29,6 +29,7 @@ class TicTacToe
   def move(index, token="X")
     if valid_movie?(index)
       @board[index] = token
+    end
   end
   
   def position_taken?(index)
