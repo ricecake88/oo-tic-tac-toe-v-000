@@ -82,12 +82,12 @@ class TicTacToe
       win_index2 = combination[1]
       win_index3 = combination[2]
       
-      position_index1 = win_index1
-      position_index2 = win_index2
-      position_index3 = win_index3
+      position1 = @board[win_index1]
+      position2 = @board[win_index2]
+      position3 = @board[win_index3]
       
-      if (@board[position_index1] == "X" && @board[position_index2] == "X" && @board[position_index3] == "X") ||
-        (@board[position_index1] == "O" && @board[position_index2] == "O" && @board[position_index3] == "O") 
+      if (position1 == "X" && position2 == "X" && position3 == "X") ||
+        (position1 == "O" && position2 == "O" && position3 == "O") 
         return combination
       end
     end
