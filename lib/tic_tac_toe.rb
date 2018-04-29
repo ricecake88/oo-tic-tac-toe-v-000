@@ -48,5 +48,6 @@ class TicTacToe
     end
   end
     
-    
+  def turn()
+    position = 
 end
