@@ -68,7 +68,7 @@ class TicTacToe
   def turn(position)
     index = input_to_index(position)
     if index < 9 && index >= 0
-      move(index)
+      move(index, current_player)
     else
       turn(position)
     end
