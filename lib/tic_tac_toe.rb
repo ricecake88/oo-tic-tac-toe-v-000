@@ -47,7 +47,7 @@ class TicTacToe
       return true
     end
   end
-    
+
   def turn_count
     count = 0
     @board.each do|index|
@@ -57,7 +57,7 @@ class TicTacToe
     end
     return count
   end
-
+  
   def turn(position)
     index = input_to_index(position)
     if index < 9 && index >= 0
@@ -65,4 +65,5 @@ class TicTacToe
     else
        turn(position)
     end
+  end
 end
