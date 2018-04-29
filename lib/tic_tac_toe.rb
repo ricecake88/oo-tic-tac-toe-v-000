@@ -63,6 +63,7 @@ class TicTacToe
       return "O"
     else
       return "X"
+    end
   end
 
   def turn(position)
