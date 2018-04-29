@@ -118,4 +118,5 @@ class TicTacToe
    end
   end
   
+  def display_board
 end
