@@ -48,9 +48,20 @@ class TicTacToe
     end
   end
     
+  def turn_count
+    count = 0
+    @board.for each |index|
+      if @board[index] == "X" || @board[index] == "O"
+        count += 1
+      end
+      return count
+  end
+
   def turn(position)
     index = input_to_index(position)
     if index < 9 && index >= 0
+      move(index)
+    else
        turn(position)
-       move(index,)
+    end
 end
