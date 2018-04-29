@@ -54,7 +54,8 @@ class TicTacToe
       if @board[index] == "X" || @board[index] == "O"
         count += 1
       end
-      return count
+    end
+    return count
   end
 
   def turn(position)
