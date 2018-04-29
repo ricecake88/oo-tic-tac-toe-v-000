@@ -107,7 +107,10 @@ class TicTacToe
   end
   
   def winner
-    if won?
-    
+   won?.all? do|position|
+     if position == "X"
+     end
+   end
+     
   end
 end
