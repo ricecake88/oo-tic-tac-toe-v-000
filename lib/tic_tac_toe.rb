@@ -59,9 +59,9 @@ class TicTacToe
   end
 
   def current_player
-    if turn_count % 2 == 0
-      return "O"
-    else
+    if turn_count % 2 == 0 || turn_count == 0
+      return "X"
+    elsw
       return "X"
     end
   end
