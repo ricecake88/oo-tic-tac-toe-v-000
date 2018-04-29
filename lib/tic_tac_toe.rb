@@ -77,8 +77,8 @@ class TicTacToe
   end
 
   def won?
-    @WIN_COMBINATIONS.each do |win_combo|
-      win_combo
+    @WIN_COMBINATIONS.each do |combination|
+      win_index1 = 
   end
   
   def full?
