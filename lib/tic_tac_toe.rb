@@ -91,6 +91,7 @@ class TicTacToe
         return combination
       end
     end
+    return false
   end
   
   def full?
