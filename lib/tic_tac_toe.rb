@@ -77,6 +77,11 @@ class TicTacToe
   end
 
   def won?
+    @board.select |combo| 
+      @WIN_COMBINATIONS.each do|win_combo|
+        combo == win_combo
+      end
+    end
   end
   
   def full?
