@@ -76,5 +76,10 @@ class TicTacToe
     end
   end
 
-
+  def won?
+  end
+  
+  def full?
+    @board.all 
+  end
 end
