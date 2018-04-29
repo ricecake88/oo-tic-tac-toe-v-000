@@ -105,4 +105,7 @@ class TicTacToe
   def over?
     return won? || draw?
   end
+  
+  def winner
+    if won? return current_player
 end
