@@ -57,13 +57,22 @@ class TicTacToe
     end
     return count
   end
-  
+
+  def current_player
+    if turn_count % 2 == 0
+      return "O"
+    else
+      return "X"
+  end
+
   def turn(position)
     index = input_to_index(position)
     if index < 9 && index >= 0
       move(index)
     else
-       turn(position)
+      turn(position)
     end
   end
+
+
 end
