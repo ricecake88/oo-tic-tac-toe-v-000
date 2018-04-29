@@ -101,4 +101,8 @@ class TicTacToe
   def draw?
     return !won? && full?
   end
+  
+  def over?
+    return won? || draw?
+  end
 end
