@@ -109,7 +109,7 @@ class TicTacToe
   def winner
     if won?
      won?.all? do|position|
-       if position == "X"
+       if @board[position] == "X"
          return "X"
        else
          return "O"
