@@ -107,7 +107,8 @@ class TicTacToe
   end
   
   def winner
-    if won? current_player
+    if over? && won?
+      current_player
     end
   end
 end
